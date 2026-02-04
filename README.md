@@ -4,9 +4,9 @@
 
 **[English](./README.md)** | [简体中文](./README.zh-CN.md)
 
-[![NPM Version](https://img.shields.io/npm/v/@skills-guard/core)](https://www.npmjs.com/package/@skills-guard/core)
-[![License](https://img.shields.io/npm/l/@skills-guard/core)](LICENSE)
-[![Node.js](https://img.shields.io/node/v/@skills-guard/core)](package.json)
+[![NPM Version](https://img.shields.io/npm/v/skills-guard)](https://www.npmjs.com/package/skills-guard)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Node.js](https://img.shields.io/node/v/skills-guard)](package.json)
 
 **Documentation:** [Security Standard](./SECURITY_STANDARD.md) | [Contributing](./CONTRIBUTING.md) | [Changelog](./CHANGELOG.md)
 
@@ -314,13 +314,3 @@ We welcome contributions! Please see our:
 - 🔒 [Security Policy](SECURITY.md) - Reporting vulnerabilities
 - 📋 [Changelog](CHANGELOG.md) - Version history
 
-### Quick Links
-
-- 🐛 [Report a Bug](https://github.com/uttgeorge/SkillsGuard/issues/new?template=bug_report.yml)
-- 💡 [Request a Feature](https://github.com/uttgeorge/SkillsGuard/issues/new?template=feature_request.yml)
-- 🔒 [Suggest a Security Rule](https://github.com/uttgeorge/SkillsGuard/issues/new?template=security_rule.yml)
-- 💬 [Discussions](https://github.com/uttgeorge/SkillsGuard/discussions)
-
----
-
-Made with ❤️ by [Skills Guard Contributors](https://github.com/uttgeorge/SkillsGuard/graphs/contributors)
