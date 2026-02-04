@@ -1,6 +1,6 @@
 {
   "name": "skills-guard",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Skills Guard CLI - Command Line Tool for Agent Skills Security Scanning",
   "type": "module",
   "bin": {

@@ -1,6 +1,6 @@
 {
   "name": "@skills-guard/sdk",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Skills Guard SDK - Client Library for Agent Skills Security Scanner",
   "type": "module",
   "main": "./dist/index.js",

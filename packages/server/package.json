@@ -1,6 +1,6 @@
 {
   "name": "@skills-guard/server",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Skills Guard REST API Server - HTTP API Service for Agent Skills Security",
   "type": "module",
   "main": "./dist/index.js",
