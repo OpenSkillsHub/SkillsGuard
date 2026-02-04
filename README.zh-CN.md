@@ -4,9 +4,9 @@
 
 [English](./README.md) | **[简体中文](./README.zh-CN.md)**
 
-[![NPM Version](https://img.shields.io/npm/v/@skills-guard/core)](https://www.npmjs.com/package/@skills-guard/core)
-[![License](https://img.shields.io/npm/l/@skills-guard/core)](LICENSE)
-[![Node.js](https://img.shields.io/node/v/@skills-guard/core)](package.json)
+[![NPM Version](https://img.shields.io/npm/v/skills-guard)](https://www.npmjs.com/package/skills-guard)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Node.js](https://img.shields.io/node/v/skills-guard)](package.json)
 
 **文档：** [安全标准](./SECURITY_STANDARD.md) | [贡献指南](./CONTRIBUTING.md) | [更新日志](./CHANGELOG.md)
 
