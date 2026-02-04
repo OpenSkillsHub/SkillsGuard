@@ -1,0 +1,124 @@
+name: 🔒 New Security Rule
+description: Suggest a new security detection rule
+title: "[Rule]: "
+labels: ["security-rule", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Skills Guard's detection capabilities! 🔒
+        Please provide detailed information about the security pattern you've identified.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm the following before submitting
+      options:
+        - label: I have checked SECURITY_STANDARD.md to ensure this rule doesn't exist
+          required: true
+        - label: This rule detects a genuine security risk in Agent Skills
+          required: true
+
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Detection Layer
+      description: Which detection layer does this rule belong to?
+      options:
+        - "Layer 0: Schema Validation"
+        - "Layer 1: Tool Permission Analysis"
+        - "Layer 2: Instruction Content Scanning"
+        - "Layer 3: Behavioral Pattern Analysis"
+        - "Layer 4: External Script Analysis"
+        - "Not sure"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity Level
+      description: How severe is this security risk?
+      options:
+        - High (direct system access, data exfiltration)
+        - Medium (potential for abuse, requires user action)
+        - Low (informational, best practice violation)
+    validations:
+      required: true
+
+  - type: textarea
+    id: threat-description
+    attributes:
+      label: Threat Description
+      description: Describe the security threat this rule would detect
+      placeholder: |
+        This pattern allows attackers to...
+        The risk is that...
+    validations:
+      required: true
+
+  - type: textarea
+    id: detection-pattern
+    attributes:
+      label: Detection Pattern
+      description: Describe or provide the pattern to detect (regex, keywords, etc.)
+      placeholder: |
+        Pattern: /example.*pattern/i
+        Keywords: ["dangerous", "keyword"]
+    validations:
+      required: true
+
+  - type: textarea
+    id: example-malicious
+    attributes:
+      label: Example Malicious Content
+      description: Provide example SKILL.md content that should trigger this rule
+      render: markdown
+      placeholder: |
+        ---
+        name: malicious-skill
+        ---
+        # Instructions
+        [malicious content here]
+    validations:
+      required: true
+
+  - type: textarea
+    id: example-benign
+    attributes:
+      label: Example Benign Content
+      description: Provide example content that should NOT trigger this rule (to avoid false positives)
+      render: markdown
+      placeholder: |
+        ---
+        name: safe-skill
+        ---
+        # Instructions
+        [safe content that might look similar]
+
+  - type: textarea
+    id: suggested-id
+    attributes:
+      label: Suggested Rule ID
+      description: Suggest an ID following our naming convention (e.g., TOOL003, INJECT005)
+      placeholder: "e.g., INJECT005"
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Any references to similar attacks, CVEs, or research papers
+      placeholder: |
+        - https://example.com/related-attack
+        - CVE-XXXX-XXXX
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Would you be willing to implement this rule?
+      options:
+        - label: I would be willing to submit a PR to implement this rule

@@ -1,0 +1,24 @@
+{
+  "name": "skills-guard-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Skills Guard - Security Scanner for Anthropic Agent Skills",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "dev": "pnpm -r dev",
+    "clean": "pnpm -r clean",
+    "server": "pnpm --filter @skills-guard/server start",
+    "server:dev": "pnpm --filter @skills-guard/server dev",
+    "cli": "pnpm --filter skills-guard start",
+    "mcp": "pnpm --filter skills-guard-mcp start"
+  },
+  "keywords": [
+    "agent-skills",
+    "security",
+    "mcp",
+    "anthropic"
+  ],
+  "author": "Skills Guard Team",
+  "license": "MIT"
+}

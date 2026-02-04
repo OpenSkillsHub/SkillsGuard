@@ -1,0 +1,53 @@
+{
+  "name": "skills-guard-mcp",
+  "version": "0.1.0",
+  "description": "Skills Guard MCP Server - Model Context Protocol Server for Agent Skills Security",
+  "type": "module",
+  "bin": {
+    "skills-guard-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --clean",
+    "dev": "tsup src/index.ts --format esm --watch",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [
+    "skills-guard",
+    "agent-skills",
+    "anthropic",
+    "claude",
+    "security",
+    "scanner",
+    "mcp",
+    "model-context-protocol",
+    "ai-safety"
+  ],
+  "author": "Skills Guard Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skills-guard/skills-guard.git",
+    "directory": "packages/mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/skills-guard/skills-guard/issues"
+  },
+  "homepage": "https://github.com/skills-guard/skills-guard#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@skills-guard/core": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.0"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "@skills-guard/core",
+  "version": "0.1.0",
+  "description": "Skills Guard Core - Security Scanner Engine for Anthropic Agent Skills",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "rules"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "dev": "tsup src/index.ts --format esm --dts --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm run build && pnpm run test"
+  },
+  "keywords": [
+    "skills-guard",
+    "agent-skills",
+    "anthropic",
+    "claude",
+    "security",
+    "scanner",
+    "mcp",
+    "ai-safety"
+  ],
+  "author": "Skills Guard Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skills-guard/skills-guard.git",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/skills-guard/skills-guard/issues"
+  },
+  "homepage": "https://github.com/skills-guard/skills-guard#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  }
+}
