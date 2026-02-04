@@ -1,6 +1,6 @@
 {
   "name": "@skills-guard/core",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Skills Guard Core - Security Scanner Engine for Anthropic Agent Skills",
   "type": "module",
   "main": "./dist/index.js",

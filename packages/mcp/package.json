@@ -1,6 +1,6 @@
 {
   "name": "skills-guard-mcp",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Skills Guard MCP Server - Model Context Protocol Server for Agent Skills Security",
   "type": "module",
   "bin": {
